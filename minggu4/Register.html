@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>
+        Formulir Pendaftaran
+    </title>
+    <head>
+        <h1 align="center">
+            FORMULIR PENDAFTARAN
+        </h1>
+        <h2>
+            <table width=70% align="center" border="2"></table>
+        </h2>
+    </head>
+    <body>
+        <form action="register.php" method="POST" name="fcontoh">
+        <fieldset> 
+        <legend>INFO PENDAFTARAN</legend>
+            <p>
+            <label for="fnisn">NISN: </label>
+            <input type="number" id="fnisn" name="fnisn" required/>
+            </p>
+            <p>
+                <label for="fasalSekolah">Asal Sekolah: </label>
+                <input type="text" id="fasalSekolah" name="fasalSekolah" required/>
+            </p>
+            <p>
+                <label for="ftahunLulus">Tahun Lulus: </label>
+                <input type="number" min="2015" max="2030" id="ftahunLulus" name="ftahunlulus" required/>
+            </p> 
+            <p>
+                <label for="lampiranfcijazah">Lampiran Fotocopy Ijazah :</label>
+                <br><br><input type="file"></input>
+            </p>
+        </fieldset>
+        </form>
+</body>
+<body>
+<form action="proses.php" method="POST" name="fcontoh">
+    <fieldset> 
+        <legend>DATA CALON PESERTA</legend>
+        <p>
+            <label for="fnamaLengkap">Nama Lengkap:</label> 
+            <input type="text" id="fnamaLengkap" name="fnamaLengkap" required/>
+        </p>
+        <p>
+            <label for="fnik">NIK: </label>
+            <input type="number" id="fnik" name="fnik" required/>
+        </p>
+        <p>
+            <label for="ftempatLahir">Tempat Lahir:</label> 
+            <input type="text" id="ftempatLahir" name="ftempatLahir" required/>
+        </p>
+        <p>
+            <label for="ftanggalLahir">Tanggal Lahir:</label>
+            <input type="date" id="ftanggalLahir" name="ftanggalLahir" required/>
+            <label for="fumur">,Umur:</label> 
+            <input type="number" min="10" max="90" id="fumur" name="fumur"/>
+            <label for="ftahun">Tahun</label> 
+        </p>
+        <p>
+            <label for="aktekelahiran">Fotocopy Akte kelahiran yang telah dilegalisir :</label>
+                <br><br><input type="file"></input>
+        </p>
+        <p>
+            <label for="fagama">Agama:</label> 
+            <select name="agama">
+                <option value=""></option>
+                <option value="islam">Islam</option>
+                <option value="kristen">Kristen</option>
+                <option value="katholik">Katholik</option>
+                <option value="hindu">Hindu</option>
+                <option value="budha">Budha</option>
+                <option value="konghuchu">Kong Hu Chu</option>
+            </select>
+        </p>
+        <p>
+            <label for="fJK">Jenis kelamin:</label>
+            <p>
+            <label><input type="radio" name="jenis kelamin" value="laki-laki" /> Laki-laki</label>
+            </p>
+            <p>
+            <label><input type="radio" name="jenis kelamin" value="perempuan"/>Perempuan</label>
+            </p>
+        </p>
+        <p>
+            <label for="falamat">Alamat:</label> 
+            <input type="text" id="falamat" name="falamat"required/><br>
+
+            <p style="text-align: justify; text-indent: 2.0in;"> Desa/Kel: 
+                <input type="text" name="alamat" required/>
+            </p>
+                <p style="text-align: justify; text-indent: 2.0in;"> Kecamatan: 
+                    <input type="text" name="alamat" required/>
+                </p>
+                    <p style="text-align: justify; text-indent: 2.0in;"> Kabupaten: 
+                        <input type="text" name="alamat" required/>
+                    </p>
+                        <p style="text-align: justify; text-indent: 2.0in;"> Provinsi: 
+                            <input type="text" name="alamat" required/>
+                        </p>
+        </p>
+        <p>
+            <label for="femail">Email:</label> 
+            <input type="email" id="femail" name="femail" required/>
+        </p>
+    </fieldset>
+</form>
+<form action="proses.php" method="POST" name="fcontoh">
+    <fieldset>
+        <legend>DATA ORANG TUA (Lampirkan KK)</legend>
+        <p>
+            <label for="fNKK">Nomor Kartu Keluarga: </label>
+            <input type="number" id="fNKK" name="fNKK" required/>
+        </p>
+        <p>
+            <label for="fnamaAyKa">Nama Ayah Kandung:</label> 
+            <input type="text" id="fnamaAyKa" name="fnamaAyKa" required/>
+        </p>
+        <p>
+            <label for="fagama">Agama:</label> 
+            <select name="agama">
+                <option value=""></option>
+                <option value="islam">Islam</option>
+                <option value="kristen">Kristen</option>
+                <option value="katholik">Katholik</option>
+                <option value="hindu">Hindu</option>
+                <option value="budha">Budha</option>
+                <option value="konghuchu">Kong Hu Chu</option>
+            </select>
+        </p>
+        <p>
+            <label for="fpekerjaan">Pekerjaan:</label> 
+            <input type="text" id="fpekerjaan" name="fpekerjaan" required/>
+        </p>
+        <p>
+            <label for="fnamaIbKa">Nama Ibu Kandung:</label> 
+            <input type="text" id="fnamaIbKa" name="fnamaIbKa" required/>
+        </p>
+        <p>
+            <label for="fagama">Agama:</label> 
+            <select name="agama">
+                <option value=""></option>
+                <option value="islam">Islam</option>
+                <option value="kristen">Kristen</option>
+                <option value="katholik">Katholik</option>
+                <option value="hindu">Hindu</option>
+                <option value="budha">Budha</option>
+                <option value="konghuchu">Kong Hu Chu</option>
+            </select>
+        </p>
+        <p>
+            <label for="fpekerjaan">Pekerjaan:</label> 
+            <input type="text" id="fpekerjaan" name="fpekerjaan"required/>
+        </p>
+        <p>
+            <label for="falamatOrtu">Alamat Orang Tua:</label> 
+            <input type="text" id="falamatOrtu" name="falamatOrtu"required/><br>
+
+            <p style="text-align: justify; text-indent: 2.0in;"> Desa/Kel: 
+                <input type="text" name="alamat" required/>
+            </p>
+                <p style="text-align: justify; text-indent: 2.0in;"> Kecamatan: 
+                    <input type="text" name="alamat"required/>
+                </p>
+                    <p style="text-align: justify; text-indent: 2.0in;"> Kabupaten: 
+                        <input type="text" name="alamat"required/>
+                    </p>
+                        <p style="text-align: justify; text-indent: 2.0in;"> Provinsi: 
+                            <input type="text" name="alamat" required/>
+                        </p>
+        </p>
+    </fieldset>
+    <p>
+        <label><input type="checkbox" name="Remember" val="Remember"/> Remember me</label>
+        <input type="submit" name="submit" value="Send" />
+    </p>
+</form>
+</body>
+</html>
